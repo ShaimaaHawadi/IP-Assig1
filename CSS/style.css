@@ -13,6 +13,7 @@ body {
 h1 {
   font-size: 2em;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 /* Section Styles */
@@ -26,6 +27,7 @@ h1 {
   position: relative;
 }
 
+/* Section-title Styles */
 .section-title {
   position: absolute;
   top: 0;
@@ -60,6 +62,35 @@ p {
 }
 
 /* Layout for Desktop */
+@media (min-width: 991px) and (max-width: 2000px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%;
+    
+  }
+
+  .section {
+    width: 32%;
+    margin-bottom: 20px;
+  }
+
+  #chicken {
+    order: 1;
+  }
+
+  #sushi {
+    order: 2;
+  }
+
+  #beef {
+    order: 3;
+  }
+}
+
+
+/* Layout for Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
   body {
     display: flex;
